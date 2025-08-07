@@ -1,11 +1,12 @@
 ---
 import Boton from "../components/atoms/Boton.astro";
 import Layout from "../layouts/Layout.astro";
-
-
 ---
 
-<Layout title="Pagina no encontrada">
-        <h1 class="text-xl">Pagina no encontrada</h1>
-        <Boton texto="Regresar" href="/"/>
+<Layout title="Page non trouvée">
+    <section class="flex flex-col items-center justify-center min-h-[70vh] text-center space-y-4">
+        <h1 class="text-3xl font-bold text-red-600">Erreur 404</h1>
+        <p class="text-lg">Désolé, la page que vous recherchez n'existe pas.</p>
+        <Boton texto="Retour à l'accueil" href="/" />
+    </section>
 </Layout>
